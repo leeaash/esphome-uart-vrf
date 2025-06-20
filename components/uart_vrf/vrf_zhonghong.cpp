@@ -145,7 +145,7 @@ namespace vrf_protocol {
                 }
             }
 
-            esphome::ESP_LOGD(TAG, "consume succ, data=%s", esphome::format_hex_pretty(this->data_.data(), length).c_str());
+            ESP_LOGD(TAG, "consume succ, data=%s", esphome::format_hex_pretty(this->data_.data(), length).c_str());
             this->data_.erase(this->data_.begin(), this->data_.begin() + length);
         }
     }
